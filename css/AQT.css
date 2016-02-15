@@ -5828,7 +5828,7 @@ body {
   background-image: url(../images/layout/background_white_c.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   min-height: 800px;
   text-align: center; }
 
