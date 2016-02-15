@@ -2,9 +2,9 @@
 @import 'partials/colors';
 @import "vendor/html5-boilerplate/normalize.css";
 
-@import "vendor/bootstrap";
+//@import "vendor/bootstrap";
 //override bootstrap empty hrefs elements to avoid problems in angular
-.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+//.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 $font-family: 'Roboto', sans-serif;
 
