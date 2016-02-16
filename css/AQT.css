@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic");
-@import url(vendor/html5-boilerplate/normalize.css);
+@import url(../scss/vendor/html5-boilerplate/normalize.css);
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5817,12 +5817,12 @@ button.close {
 body {
   font-family: "Roboto", sans-serif; }
 
-.logotype {
-  margin-top: 1em;
-  font-size: 1.3em; }
+.innertube {
+  padding: 15px; }
 
-.logotype_bold {
-  font-weight: 700; }
+.left-align {
+  text-align: left;
+  margin-left: 0px; }
 
 #background_1 {
   background-image: url(../images/layout/background_white_c.jpg);
@@ -5832,11 +5832,82 @@ body {
   min-height: 800px;
   text-align: center; }
 
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  min-height: 90%;
+  background-color: #3A3A3C; }
+
 .logo_home {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
-  overflow: hidden; }
+  padding-top: 33%; }
+
+.logotype {
+  margin-top: 1em;
+  font-size: 1.3em; }
+
+.logotype_bold {
+  font-weight: 700; }
+
+.menu {
+  width: 100%; }
+
+.menuitem {
+  padding-top: .75em;
+  font-size: 1.4em;
+  min-height: 60px;
+  text-transform: uppercase; }
+
+.menuitem-bold {
+  font-weight: 700; }
+
+.btn-question {
+  font-size: 2em;
+  color: #3A3A3C; }
+
+.bottom {
+  position: absolute;
+  bottom: 0; }
+
+.bottom-right {
+  position: absolute;
+  right: 5px;
+  bottom: 5px; }
+
+.btn-exit {
+  font-size: 2em;
+  color: #F9F8F0;
+  background-color: #3A3A3C;
+  position: absolute;
+  right: 0px; }
+
+.btn-exit:hover, .btn-exit:focus, .btn-exit:active {
+  background: #484850;
+  color: #F9F8F0; }
+
+.bk-red {
+  background-color: #BE1E2D; }
+
+.bk-orange {
+  background-color: #F05A28; }
+
+.bk-bittersweet {
+  background-color: #EF4036; }
+
+.txt-pale-orange {
+  color: #F48159; }
+
+.txt-reverse {
+  color: #F9F8F0; }
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+  .logo_home {
+    padding-top: 15%; } }
 
 /*# sourceMappingURL=AQT.css.map */

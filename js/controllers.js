@@ -5,3 +5,15 @@ aqtControllers.controller('HomeController', ['$scope', function($scope) {
 }]);
 
 aqtControllers.controller('StandardsController',[]);
+
+aqtControllers.controller('OverlayController',['$scope', function($scope){
+	$scope.hideOverlay="true";
+	$scope.toggleOverlay=function(){
+		$scope.hideOverlay = !$scope.hideOverlay;
+	}
+	$scope.hideMenu = "true";
+	$scope.toggleMenu=function(){
+		$scope.hideMenu = !$scope.hideMenu;
+	}
+	
+}]);

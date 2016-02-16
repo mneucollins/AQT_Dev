@@ -1,5 +1,6 @@
 var AQT = angular.module('AQT', [
 	'ngRoute',
+	'ui.bootstrap',
 	'aqtControllers'
 ]);
 

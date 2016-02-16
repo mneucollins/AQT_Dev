@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic");
-@import 'partials/colors';
-@import "vendor/html5-boilerplate/normalize.css";
+@import "../scss/vendor/html5-boilerplate/normalize.css";
 
+@import 'partials/colors';
 @import "vendor/bootstrap";
+
 //override bootstrap empty hrefs elements to avoid problems in angular
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
@@ -20,35 +21,113 @@ body {
   font-family: $font-family;
 }
 
-.logotype
-{
-	margin-top: 1em;
-	font-size: 1.3em;
+.innertube {
+	padding: 15px;
 }
 
-.logotype_bold {
-	font-weight: 700;
+.left-align { 
+	text-align: left;
+	margin-left:0px; 
 }
 
 #background_1
 {
-	//width: 100%;
 	background-image: url(../images/layout/background_white_c.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment:scroll;
+	background-attachment: scroll;
 	min-height: 800px;
-	//margin: -10px;
 	text-align: center;
-	//padding-right: 20px; 
 }
+
+.overlay{	 
+	@include centerer;
+	width: 90%;
+	min-height: 90%;
+	background-color: $dk-grey;
+}
+
 
 .logo_home {
 	width: 100%;
  	margin-left:auto;
  	margin-right:auto;
- 	padding-top: 100px;
-	overflow: hidden;
- 	//padding-bottom: 300px;
- 	//@include centerer;
+ 	padding-top: 33%;
 }
+
+.logotype
+{
+	margin-top: 1em;
+	font-size: 1.3em;
+}
+.logotype_bold {
+	//use with span inside logotype classed element
+	font-weight: 700;
+}
+
+.menu {
+	width:100%;
+}
+
+.menuitem
+{	
+	//@include centerer;
+	padding-top:.75em;
+	font-size: 1.4em;
+	min-height: 60px;
+	text-transform: uppercase;
+}
+.menuitem-bold {
+	font-weight: 700;	
+}
+
+.btn-question {
+	font-size: 2em;
+	color: $dk-grey;
+	//background-color: $dk-grey;
+}
+
+.bottom {
+	position:absolute;
+	//position:fixed; 
+	bottom:0;
+}
+
+.bottom-right {
+	position:absolute;
+	right: 5px;
+	bottom:5px;
+}
+
+.btn-exit
+{
+	font-size: 2em;
+	color: $reverse;
+	background-color: $dk-grey;
+	position: absolute;
+	right: 0px;
+}
+ 
+.btn-exit:hover, .btn-exit:focus, .btn-exit:active {
+    background: $grey;
+	color: $reverse;
+}
+
+.bk-red { background-color: $red; }
+.bk-orange { background-color: $orange; }
+.bk-bittersweet { background-color: $bittersweet; }
+
+.txt-pale-orange {color:$pale-orange;}
+.txt-reverse { color:$reverse; }
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+	.logo_home {
+		padding-top: 15%;
+	}
+    
+}
+
+
+

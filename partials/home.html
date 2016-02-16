@@ -1,10 +1,32 @@
-<div id = "background_1">
+<div id = "background_1" ng-controller="OverlayController">
 
-	<div class="logo_home">
+	<div class="logo_home" ng-click="toggleMenu()">
 		<img src="images/layout/logo_200.png" alt="AIDS Quilt Touch Logo">
 		<div class="logotype">
 			<span class="logotype_bold">AIDS QUILT</span> TOUCH
 		</div>
-		<div class="overlay"></div>
 	</div>
-</div>
+
+	<div class= " btn-question bottom-right" ng-click="toggleOverlay()" ng-show="hideOverlay">
+		<span class="glyphicon glyphicon-question-sign"></span>
+	</div>
+
+	<div class="overlay" id="about" ng-hide="hideOverlay">
+		<button type="button" class="btn btn-exit" ng-click="toggleOverlay()">
+			<i class="glyphicon glyphicon-remove"></i>
+		</button>
+		<div class="innertube">
+			<div class="left-align txt-reverse">
+				<h3>ABOUT</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="menu bottom" id="homeMenu" ng-hide="hideMenu">
+		<div class= "menuitem bk-orange txt-reverse"><span class="menuitem-bold">Explore the</span> QUILT </div>
+		<div class= "menuitem bk-bittersweet txt-reverse"><span class="menuitem-bold">My Quilt</span> <span class="txt-pale-orange">(Participate)</span> 		
+	</div>
+
+		
+ </div>
