@@ -1,0 +1,30 @@
+$iconsize:34px;
+.sprite
+{
+	background-repeat: no-repeat;
+	width: 	$iconsize;
+	height: $iconsize;
+	background-image: url(../images/layout/sprites-icn.png);
+	padding: 0px;
+	//float: left;
+}
+	
+.icn-home	{
+	@extend .sprite;
+	background-position: 0px (-$iconsize * 0); 
+}
+
+.icn-info	{ 
+	@extend .sprite;
+	background-position: 0px (-$iconsize * 1); 
+}
+
+.icn-close 	{ 	
+	@extend .sprite;
+	background-position: 0px (-$iconsize * 2); 
+}
+
+.icn-back 	{ 
+	@extend .sprite;
+	background-position: 0px (-$iconsize * 3); 
+}

@@ -1,0 +1,73 @@
+/* Heidi-based navigation ids */
+
+$navbarheight:50px;
+
+.topnav
+{
+    background-color: $dk-grey;
+    position: absolute;
+    top: 0px;
+    left: 0px ;
+    height: $navbarheight;
+    width: 100%;
+    padding-top: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+//-------- these can probably worked into the new aqtnav rules below
+
+.menu {
+    width:100%;
+}
+
+
+.menuitem-pos{
+ 
+    padding-top:.75em;
+    min-height: 60px;
+}
+
+.menuitem-style
+{   
+    //@include centerer;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.menuitem-bold {
+    font-weight: 700;   
+}
+
+
+.aqtnav {
+    position: fixed;
+    width: 100%;
+	height: 100%;
+}
+
+.aqtnav-button-label {
+    width: 80%;
+    text-align:left;
+    font-size: 3em;
+    text-transform: uppercase;    
+    @include centerer;
+}
+
+
+#explore-button {
+   	padding-top: $navbarheight;
+	width:100%;
+    height:56%;
+/*start opaque and change to transparent if browser can handle it*/	
+	background-color: $dk-pink;
+	background-color: rgba($dk-pink, .5);
+}
+
+#participate-button {
+    width:100%;
+    height:44%;
+/*start opaque and change to transparent if browser can handle it*/ 
+    background-color: $purple;
+    background-color: rgba($purple, .5);
+}
