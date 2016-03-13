@@ -14,8 +14,8 @@ AQT.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 		templateUrl:'partials/standards.html',
 		controller: 'StandardsController'
 	})
-	.when('/explore',{
-		templateUrl:'partials/explore.html'
+	.when('/main',{
+		templateUrl:'partials/main.html'
 	})
 	.otherwise({
 		redirectTo: '/home'

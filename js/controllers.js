@@ -39,5 +39,5 @@ aqtControllers.controller('HomeController',['$scope', function($scope){
 	}
 }]);
 
-aqtControllers.controller('ExploreController', ['$scope','$location',function($scope, $location){	
+aqtControllers.controller('MainController', ['$scope','$location',function($scope, $location){	
 }]);
