@@ -5914,17 +5914,28 @@ body {
   margin-right: 0px; }
 
 #background_1 {
+  /*home page*/
   background-image: url(../images/layout/background_white_c.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   min-height: 800px;
   text-align: center; }
 
 #background_1a {
+  /*main page*/
   background-image: url(../images/layout/background1a-centered.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
+  min-height: 800px;
+  text-align: center; }
+
+#background_2 {
+  /*explore page*/
+  background-image: url(../images/layout/background2.jpg);
+  background-repeat: no-repeat;
+  background-position: 40% 0%;
   background-attachment: fixed;
   min-height: 800px;
   text-align: center; }
