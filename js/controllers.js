@@ -1,6 +1,13 @@
 var aqtControllers = angular.module('aqtControllers', []);
 
-aqtControllers.controller('NavController', ['$scope', '$location', function($scope, $location){
+aqtControllers.controller('NavController', ['$scope', '$rootScope','$location', function($scope, $rootScope, $location){
+
+    $scope.goBack = function(){
+    	window.history.back();
+    }   
+	$rootScope.toggleOverlay = function(){
+		$rootScope.hideOverlay = !$rootScope.hideOverlay;
+	}    
     $scope.hideStoryNav = "true";
 	$scope.showStoryNav=function(){
 		$scope.hideStoryNav = "false";
@@ -8,9 +15,10 @@ aqtControllers.controller('NavController', ['$scope', '$location', function($sco
     $scope.goHome = function (hash) { 
         $location.path(hash); 
     }
-    $scope.goBack = function(){
-    	window.history.back();
-    }
+}]);
+
+aqtControllers.controller('OverlayController', ['$scope', '$rootScope', function($scope, $rootScope){
+	$rootScope.hideOverlay = "true";
 }]);
 
 aqtControllers.controller('HomeController',['$scope', function($scope){
@@ -31,6 +39,11 @@ aqtControllers.controller('HomeController',['$scope', function($scope){
 	}
 }]);
 
-aqtControllers.controller('ExploreController', ['$scope','$location',function($scope, $location){
-	
+aqtControllers.controller('MainController', ['$scope','$location',function($scope, $location){	
+    $scope.goExplore = function (hash) { 
+        $location.path(hash); 
+    }
+}]);
+
+aqtControllers.controller('ExploreController', ['$scope','$location',function($scope, $location){	
 }]);

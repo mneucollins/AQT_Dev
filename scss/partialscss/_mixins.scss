@@ -1,7 +1,30 @@
 @mixin centerer {
-  /*position: absolute;*/
+  position: absolute;
+  /*position: relative;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin centerer_rel {
+/*  position: absolute; */
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin overlaypos {
+  position: absolute;
+  /*position: relative;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin overlaypos_nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -46%);
 }

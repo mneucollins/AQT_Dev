@@ -8,7 +8,7 @@
 
 @import "vendor/bootstrap";
 
-//override bootstrap empty hrefs elements to avoid problems in angular
+/*override bootstrap empty hrefs elements to avoid problems in angular*/
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 $font-family: 'Roboto', sans-serif;
@@ -38,24 +38,56 @@ body {
 	margin-right:0px; 
 }
 
-
 #background_1
 {
+	/*home page*/
 	background-image: url(../images/layout/background_white_c.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	min-height: 800px;
 	text-align: center;
 }
 
-.overlay{	 
-	@include centerer;
-	width: 90%;
-	min-height: 90%;
-	background-color: $dk-grey;
+#background_1a
+{
+	/*main page*/
+	background-image: url(../images/layout/background1a-centered.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 800px;
+	text-align: center;
 }
 
+#background_2
+{
+	/*explore page*/
+	background-image: url(../images/layout/background2.jpg);
+	background-repeat: no-repeat;
+	background-position: 40% 0%;
+	background-attachment: fixed;
+	min-height: 800px;
+	text-align: center;
+}
+
+
+
+.overlay, .overlay_nav{	 
+	width: 90%;
+	background-color: $dk-grey;
+	background-color: rgba($dk-grey, .85);
+}
+
+.overlay{	 
+	@include overlaypos;
+	min-height: 90%;
+}
+
+.overlay_nav{
+	@include overlaypos_nav;
+	min-height: 85%;	
+}
 
 .logo_home {
 	width: 100%;
@@ -70,11 +102,11 @@ body {
 	font-size: 1.3em;
 }
 .logotype_bold {
-	//use with span inside logotype classed element
+	/*use with span inside logotype classed element*/
 	font-weight: 700;
 }
 
-//--------
+/*--------*/
 
 .btn-question {
 	font-size: 2em;
@@ -84,7 +116,7 @@ body {
 
 .bottom {
 	position:absolute;
-	//position:fixed; 
+	/*position:fixed;*/ 
 	bottom:0;
 }
 

@@ -21,7 +21,6 @@ $navbarheight:50px;
     width:100%;
 }
 
-
 .menuitem-pos{
  
     padding-top:.75em;
@@ -49,9 +48,9 @@ $navbarheight:50px;
 .aqtnav-button-label {
     width: 80%;
     text-align:left;
-    font-size: 3em;
+    font-size: 3.5em;
     text-transform: uppercase;    
-    @include centerer;
+    @include centerer_rel;
 }
 
 
@@ -61,7 +60,7 @@ $navbarheight:50px;
     height:56%;
 /*start opaque and change to transparent if browser can handle it*/	
 	background-color: $dk-pink;
-	background-color: rgba($dk-pink, .5);
+	background-color: rgba($dk-pink, .75);
 }
 
 #participate-button {
@@ -69,5 +68,5 @@ $navbarheight:50px;
     height:44%;
 /*start opaque and change to transparent if browser can handle it*/ 
     background-color: $purple;
-    background-color: rgba($purple, .5);
+    background-color: rgba($purple, .85);
 }
