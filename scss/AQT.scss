@@ -71,21 +71,23 @@ body {
 	text-align: center;
 }
 
-.overlay, .overlay_nav{	 
-	width: 90%;
-	background-color: $dk-grey;
+.overlay, .overlay_nav{
+	position: absolute;
+	top: 60px;
+	height: 84%;	
+	margin-left: 2%;
+	margin-right: 7%;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: $dk-grey;
 	background-color: rgba($dk-grey, .85);
-}
 
-.overlay{	 
-	@include overlaypos;
-	min-height: 90%;
 }
+ .overlay {
+ 	top:2%;
+ 	height:92%;
+ }
 
-.overlay_nav{
-	@include overlaypos_nav;
-	min-height: 85%;	
-}
 
 .logo_home {
 	width: 100%;

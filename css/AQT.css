@@ -5964,24 +5964,19 @@ body {
   text-align: center; }
 
 .overlay, .overlay_nav {
-  width: 90%;
+  position: absolute;
+  top: 60px;
+  height: 84%;
+  margin-left: 2%;
+  margin-right: 7%;
+  overflow: auto;
+  overflow-x: hidden;
   background-color: #3A3A3C;
   background-color: rgba(58, 58, 60, 0.85); }
 
 .overlay {
-  position: absolute;
-  /*position: relative;*/
-  top: 50%;
-  left: 50%;
-  transform: translate(-53%, -53%);
-  min-height: 90%; }
-
-.overlay_nav {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-53%, -48%);
-  min-height: 85%; }
+  top: 2%;
+  height: 92%; }
 
 .logo_home {
   width: 100%;
