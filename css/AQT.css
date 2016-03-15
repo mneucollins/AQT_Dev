@@ -66,14 +66,14 @@
 #explore-button {
   padding-top: 50px;
   width: 100%;
-  height: 50%;
+  height: 52%;
   /*start opaque and change to transparent if browser can handle it*/
   background-color: #ED2A7B;
   background-color: rgba(237, 42, 123, 0.75); }
 
 #participate-button {
   width: 100%;
-  height: 45%;
+  height: 48%;
   /*start opaque and change to transparent if browser can handle it*/
   background-color: #6B408E;
   background-color: rgba(107, 64, 142, 0.85); }
@@ -5973,14 +5973,14 @@ body {
   /*position: relative;*/
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-53%, -53%);
   min-height: 90%; }
 
 .overlay_nav {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -46%);
+  transform: translate(-53%, -48%);
   min-height: 85%; }
 
 .logo_home {
@@ -6015,8 +6015,8 @@ body {
 
 .bottom-right {
   position: absolute;
-  right: 5px;
-  bottom: 5px; }
+  right: 20px;
+  bottom: 20px; }
 
 .btn-exit {
   font-size: 2em;

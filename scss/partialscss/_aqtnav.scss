@@ -57,7 +57,7 @@ $navbarheight:50px;
 #explore-button {
    	padding-top: $navbarheight;
 	width:100%;
-    height:50%;
+    height:52%;
 /*start opaque and change to transparent if browser can handle it*/	
 	background-color: $dk-pink;
 	background-color: rgba($dk-pink, .75);
@@ -65,7 +65,7 @@ $navbarheight:50px;
 
 #participate-button {
     width:100%;
-    height:45%;
+    height:48%;
 /*start opaque and change to transparent if browser can handle it*/ 
     background-color: $purple;
     background-color: rgba($purple, .85);
