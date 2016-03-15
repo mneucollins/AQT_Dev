@@ -1,5 +1,37 @@
 <div ng-include="'partials/include/top_nav.html'"></div>
 
 <div id="background_2" ng-controller="ExploreController">
+	<div class="container-fluid">
 
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="explore_the_quilt-heading">
+					<div class="pg-title txt-yellow-green">
+						Explore
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+			    <div id="explore_the_quilt-button" ng-click='goExplore("/#")'>
+			        <div class="explore_the_quilt-label txt-reverse">
+			            Explore the Quilt
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+			    <div id="explore_stories-button" ng-click='goExplore("/#")'>
+			        <div class="explore_the_quilt-label txt-reverse">
+			            Explore stories about the quilt and people named on the quilt
+			        </div>
+			    </div>
+		    </div>
+	    </div>
+
+	</div>
 </div>
