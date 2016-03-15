@@ -47,6 +47,7 @@ body {
 	background-attachment: fixed;
 	min-height: 800px;
 	text-align: center;
+	overflow: hidden;
 }
 
 #background_1a
@@ -58,6 +59,7 @@ body {
 	background-attachment: fixed;
 	min-height: 800px;
 	text-align: center;
+	overflow: hidden;
 }
 
 #background_2
@@ -69,6 +71,7 @@ body {
 	background-attachment: fixed;
 	min-height: 800px;
 	text-align: center;
+	overflow: hidden;
 }
 
 .overlay, .overlay_nav{
@@ -100,7 +103,9 @@ body {
 {
 	margin-top: 1em;
 	font-size: 1.3em;
+	margin-bottom: 3em;
 }
+
 .logotype_bold {
 	/*use with span inside logotype classed element*/
 	font-weight: 700;
@@ -159,13 +164,18 @@ body {
 .txt-reverse { color:$reverse; }
 
 
+
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 	.logo_home {
 		padding-top: 15%;
-	}
-    
+	}    
 }
 
+@media (min-width: $screen-md-min){
+	.overlay, .overlay_nav{
+		margin-right: 2%;
+	}
+}
 
 
