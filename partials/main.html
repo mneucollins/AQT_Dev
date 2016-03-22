@@ -2,16 +2,16 @@
 
 <div id="background_1a" ng-controller="MainController">
     <div class="aqtnav">
-        <div id="explore-button" ng-click='goExplore("/explore_main")'>
+        <div id="explore-button" ng-click='goTo("/explore_main")'>
             <div class="aqtnav-button-label txt-reverse">
                 <span class = "txt-yellow-green">Explore</span><br />
-                <span class="menuitem-bold">the</span><br />
-                QUILT
+                <span class="menuitem-bold">the<br />
+                QUILT</span>
             </div>
         </div>
-        <div id="participate-button">
+        <div id="participate-button" ng-click='goTo("/my_quilt")'>
             <div class="aqtnav-button-label txt-reverse">
-                <span class = "txt-yellow-green">
+                <span class = "txt-yellow-green menuitem-bold">
                     My<br />
                     Quilt<br />
                 </span>

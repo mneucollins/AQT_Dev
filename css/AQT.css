@@ -33,6 +33,17 @@
   margin-left: 0px;
   margin-right: 0px; }
 
+.btn-exit {
+  font-size: 2em;
+  color: #F9F8F0;
+  background-color: #3A3A3C;
+  position: absolute;
+  right: 0px; }
+
+.btn-exit:hover, .btn-exit:focus, .btn-exit:active {
+  background: #484850;
+  color: #F9F8F0; }
+
 .menu {
   width: 100%; }
 
@@ -55,8 +66,9 @@
 .aqtnav-button-label {
   width: 80%;
   text-align: left;
-  font-size: 3.5em;
+  font-size: 3.3em;
   text-transform: uppercase;
+  letter-spacing: 3px;
   /*  position: absolute; */
   position: relative;
   top: 50%;
@@ -96,6 +108,14 @@
   width: 80%;
   text-align: left;
   text-transform: uppercase; }
+
+#my_quilt-heading {
+  text-align: left;
+  padding-left: 1em;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin-top: 1em; }
 
 #explore_stories-button {
   background-color: #EF4036; }
@@ -5915,10 +5935,14 @@ button.close {
   cursor: pointer; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px; }
 
 .innertube {
   padding: 15px; }
+
+.spaceabove {
+  margin-top: 40px; }
 
 .align-left {
   width: 100%;
@@ -5966,6 +5990,16 @@ body {
   text-align: center;
   overflow: hidden; }
 
+#background_3 {
+  /*MyQuilt page*/
+  background-image: url(../images/layout/background3-centered.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 800px;
+  text-align: center;
+  overflow: hidden; }
+
 .overlay, .overlay_nav {
   position: absolute;
   top: 60px;
@@ -5998,6 +6032,7 @@ body {
 
 .pg-title {
   font-size: 4em;
+  font-weight: bold;
   padding-top: 50px;
   margin-left: -15px;
   text-transform: uppercase; }
@@ -6017,16 +6052,11 @@ body {
   right: 20px;
   bottom: 20px; }
 
-.btn-exit {
-  font-size: 2em;
-  color: #F9F8F0;
-  background-color: #3A3A3C;
-  position: absolute;
-  right: 0px; }
-
-.btn-exit:hover, .btn-exit:focus, .btn-exit:active {
-  background: #484850;
-  color: #F9F8F0; }
+.formlabel {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: left; }
 
 .bk-red {
   background-color: #BE1E2D; }

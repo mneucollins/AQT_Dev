@@ -15,12 +15,16 @@ $font-family: 'Roboto', sans-serif;
 
 body {
   font-family: $font-family;
+  letter-spacing: 3px;
 }
 
 .innertube {
 	padding: 15px;
 }
 
+.spaceabove {
+	margin-top:40px;
+}
 .align-left { 
     width: 100%;
 	text-align: left;
@@ -74,6 +78,18 @@ body {
 	overflow: hidden;
 }
 
+#background_3
+{
+	/*MyQuilt page*/
+	background-image: url(../images/layout/background3-centered.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 800px;
+	text-align: center;
+	overflow: hidden;
+}
+
 .overlay, .overlay_nav{
 	position: absolute;
 	top: 60px;
@@ -113,6 +129,7 @@ body {
 
 .pg-title {
 	font-size: 4em;
+	font-weight: bold;
 	padding-top: 50px;
 	margin-left: -15px;
 	text-transform: uppercase;
@@ -140,19 +157,13 @@ body {
 }
 
 
-.btn-exit
-{
-	font-size: 2em;
-	color: $reverse;
-	background-color: $dk-grey;
-	position: absolute;
-	right: 0px;
+.formlabel {
+	font-size:1.3em;
+	text-transform: uppercase;
+	font-style: italic;
+	text-align: left;
 }
- 
-.btn-exit:hover, .btn-exit:focus, .btn-exit:active {
-    background: $grey;
-	color: $reverse;
-}
+
 
 .bk-red { background-color: $red; }
 .bk-orange { background-color: $orange; }

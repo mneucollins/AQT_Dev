@@ -16,6 +16,20 @@ $navbarheight:50px;
     margin-right: 0px;
 }
 
+.btn-exit
+{
+    font-size: 2em;
+    color: $reverse;
+    background-color: $dk-grey;
+    position: absolute;
+    right: 0px;
+}
+ 
+.btn-exit:hover, .btn-exit:focus, .btn-exit:active {
+    background: $grey;
+    color: $reverse;
+}
+
 //-------- these can probably worked into the new aqtnav rules below
 
 .menu {
@@ -49,8 +63,9 @@ $navbarheight:50px;
 .aqtnav-button-label{
     width: 80%;
     text-align:left;
-    font-size: 3.5em;
-    text-transform: uppercase;    
+    font-size: 3.3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;    
     @include centerer_rel;
 }
 
@@ -92,6 +107,16 @@ $navbarheight:50px;
     text-align:left;
     text-transform: uppercase;    
 }
+
+#my_quilt-heading{
+    text-align:left;
+    padding-left: 1em;
+    text-transform: uppercase;       
+    font-weight: normal;
+    line-height: 1.2em;
+    margin-top: 1em;
+}
+
 
 #explore_stories-button {
     background-color: $bittersweet;
