@@ -40,10 +40,15 @@ aqtControllers.controller('HomeController',['$scope', function($scope){
 }]);
 
 aqtControllers.controller('MainController', ['$scope','$location',function($scope, $location){	
-    $scope.goExplore = function (hash) { 
+    $scope.goTo = function (hash) { 
         $location.path(hash); 
     }
 }]);
 
 aqtControllers.controller('ExploreController', ['$scope','$location',function($scope, $location){	
+
 }]);
+
+aqtControllers.controller('MyQuiltController', ['$scope','$location',function($scope, $location){	
+}]);
+

@@ -15,10 +15,19 @@ $font-family: 'Roboto', sans-serif;
 
 body {
   font-family: $font-family;
+  /*letter-spacing: 3px;*/
 }
 
 .innertube {
 	padding: 15px;
+}
+
+.spaceabove40 {
+	margin-top:40px;
+}
+
+.spaceabove20 {
+	margin-top:20px;
 }
 
 .align-left { 
@@ -47,6 +56,7 @@ body {
 	background-attachment: fixed;
 	min-height: 800px;
 	text-align: center;
+	overflow: hidden;
 }
 
 #background_1a
@@ -58,6 +68,7 @@ body {
 	background-attachment: fixed;
 	min-height: 800px;
 	text-align: center;
+	overflow: hidden;
 }
 
 #background_2
@@ -69,25 +80,38 @@ body {
 	background-attachment: fixed;
 	min-height: 800px;
 	text-align: center;
+	overflow: hidden;
 }
 
+#background_3
+{
+	/*MyQuilt page*/
+	background-image: url(../images/layout/background3-centered.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 800px;
+	text-align: center;
+	overflow: hidden;
+}
 
-
-.overlay, .overlay_nav{	 
-	width: 90%;
-	background-color: $dk-grey;
+.overlay, .overlay_nav{
+	position: absolute;
+	top: 60px;
+	height: 84%;	
+	margin-left: 2%;
+	margin-right: 7%;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: $dk-grey;
 	background-color: rgba($dk-grey, .85);
-}
 
-.overlay{	 
-	@include overlaypos;
-	min-height: 90%;
 }
+ .overlay {
+ 	top:2%;
+ 	height:92%;
+ }
 
-.overlay_nav{
-	@include overlaypos_nav;
-	min-height: 85%;	
-}
 
 .logo_home {
 	width: 100%;
@@ -100,11 +124,15 @@ body {
 {
 	margin-top: 1em;
 	font-size: 1.3em;
+	margin-bottom: 3em;
+	letter-spacing: 3px;
 }
+
 .logotype_bold {
 	/*use with span inside logotype classed element*/
 	font-weight: 700;
 }
+
 
 /*--------*/
 
@@ -122,24 +150,18 @@ body {
 
 .bottom-right {
 	position:absolute;
-	right: 5px;
-	bottom:5px;
+	right: 20px;
+	bottom:20px;
 }
 
 
-.btn-exit
-{
-	font-size: 2em;
-	color: $reverse;
-	background-color: $dk-grey;
-	position: absolute;
-	right: 0px;
+.formlabel {
+	font-size:1.3em;
+	text-transform: uppercase;
+	font-style: italic;
+	text-align: left;
 }
- 
-.btn-exit:hover, .btn-exit:focus, .btn-exit:active {
-    background: $grey;
-	color: $reverse;
-}
+
 
 .bk-red { background-color: $red; }
 .bk-orange { background-color: $orange; }
@@ -151,13 +173,18 @@ body {
 .txt-reverse { color:$reverse; }
 
 
+
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 	.logo_home {
 		padding-top: 15%;
-	}
-    
+	}    
 }
 
+@media (min-width: $screen-md-min){
+	.overlay, .overlay_nav{
+		margin-right: 2%;
+	}
+}
 
 
