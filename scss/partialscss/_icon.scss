@@ -18,6 +18,10 @@ $iconsize:34px;
 	@extend .sprite;
 	background-position: 0px (-$iconsize * 1); 
 }
+.icn-info-blue	{ 
+	@extend .sprite;
+	background-position: -($iconsize*1) (-$iconsize * 1); 
+}
 
 .icn-close 	{ 	
 	@extend .sprite;
@@ -29,3 +33,14 @@ $iconsize:34px;
 	background-position: 0px (-$iconsize * 3); 
 }
 
+.icn-forward 	{ 
+	@extend .sprite;
+	background-position: 0px (-$iconsize * 4); 
+}
+
+
+
+.icn-add 	{ 
+	@extend .sprite;
+	background-position: 0px (-$iconsize * 5); 
+}

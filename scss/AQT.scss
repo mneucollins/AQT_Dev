@@ -15,16 +15,21 @@ $font-family: 'Roboto', sans-serif;
 
 body {
   font-family: $font-family;
-  letter-spacing: 3px;
+  /*letter-spacing: 3px;*/
 }
 
 .innertube {
 	padding: 15px;
 }
 
-.spaceabove {
+.spaceabove40 {
 	margin-top:40px;
 }
+
+.spaceabove20 {
+	margin-top:20px;
+}
+
 .align-left { 
     width: 100%;
 	text-align: left;
@@ -120,6 +125,7 @@ body {
 	margin-top: 1em;
 	font-size: 1.3em;
 	margin-bottom: 3em;
+	letter-spacing: 3px;
 }
 
 .logotype_bold {
@@ -127,14 +133,6 @@ body {
 	font-weight: 700;
 }
 
-.pg-title {
-	font-size: 4em;
-	font-weight: bold;
-	padding-top: 50px;
-	margin-left: -15px;
-	text-transform: uppercase;
-
-}
 
 /*--------*/
 
