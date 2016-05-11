@@ -5995,6 +5995,14 @@ body {
   text-align: right;
   margin-right: 0px; }
 
+#toSandbox {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  min-height: 15px;
+  min-width: 30px;
+  background: red; }
+
 #background_1 {
   /*home page*/
   background-image: url(../images/layout/background_white_c.jpg);

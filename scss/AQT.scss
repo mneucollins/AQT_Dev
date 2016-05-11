@@ -11,7 +11,7 @@
 /*override bootstrap empty hrefs elements to avoid problems in angular*/
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
-$font-family: 'Roboto', sans-serif;
+$font-family: 'Roboto', helvetica, sans-serif;
 
 body {
   font-family: $font-family;
@@ -45,6 +45,15 @@ body {
     width: 100%;
 	text-align: right;
 	margin-right:0px; 
+}
+
+#toSandbox {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	min-height: 15px;
+	min-width: 30px;
+	background: red;
 }
 
 #background_1

@@ -21,7 +21,7 @@ aqtControllers.controller('OverlayController', ['$scope', '$rootScope', function
 	$rootScope.hideOverlay = "true";
 }]);
 
-aqtControllers.controller('HomeController',['$scope', function($scope){
+aqtControllers.controller('HomeController',['$scope', '$http', function($scope, $http){
 	$scope.hideAbout="true";
 	$scope.toggleInfoAbout=function(){
 		$scope.hideAbout = !$scope.hideAbout;
@@ -37,7 +37,14 @@ aqtControllers.controller('HomeController',['$scope', function($scope){
 	$scope.toggleInfoMyQuilt=function(){
 		$scope.hideMenu = !$scope.hideMenu;
 	}
+	$http.get("json/help_home.json")
+		.then(function(response) {
+    		$scope.overlay = response.data.overlay;
+    	}, function(response){
+    		$scope.overlay.body = "something went wrong";
+    	});
 }]);
+
 
 aqtControllers.controller('MainController', ['$scope','$location',function($scope, $location){	
     $scope.goTo = function (hash) { 
@@ -51,4 +58,15 @@ aqtControllers.controller('ExploreController', ['$scope','$location',function($s
 
 aqtControllers.controller('MyQuiltController', ['$scope','$location',function($scope, $location){	
 }]);
+
+aqtControllers.controller('ScratchPadController', function($scope, $http){
+	$scope.displaytext="Text Passed from Scope"	;
+	$http.get("local_data/help_home.json")
+		.then (function(response){
+			$scope.jsontext=response.data;
+			$scope.heading = response.data.heading;
+			$scope.subhead = response.data.subhead;
+			$scope.body = response.data.body;
+		});
+});
 
