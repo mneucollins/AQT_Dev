@@ -1,29 +1,36 @@
-<div ng-include="'partials/include/top_nav.html'"></div>
+<div ng-include="'partials/include/global_nav.html'"></div>
 
-<div id="background_2" ng-controller="ExploreController">
+<div id="background_2" ng-controller="ExploreMainController">
 	<div class="container-fluid">
 
 		<div class="row spaceabove40">
 			<div class="col-xs-offset-2">
 				<div class="pg-title txt-yellow-green">
-					<div id="explore_the_quilt-heading">
+					<div id="explore-heading">
 						Explore
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="row spaceabove20">
-			<div class="col-xs-12">
-			    <div id="explore_the_quilt-button" ng-click='goExplore("/#")'>
-			        <div class="explore_the_quilt-label txt-reverse">
-			            Explore the Quilt
-			        </div>
-					<div class="icn-forward icn-forward-right"></div>
-			    </div>
+		<div class="row spaceabove20" id="explore_the_quilt-button" ng-click='goExplore("/explore_the_quilt")'>
+			<div class="col-xs-10 explore_the_quilt-label txt-reverse" >
+				Explore the Quilt
 			</div>
+			<div class="col-xs-2 bak-pink icon-right"></div>
 		</div>
 
+		<div class="row spaceabove20" id="explore_stories-button" ng-click='goMyQuilt("/#")'>
+			<div class="col-xs-10 explore_the_quilt-label txt-reverse">
+			    Explore stories about the quilt and people named on the quilt
+			</div>
+			<div class="col-xs-2 icon-right" style="top: 50px;">
+				<!-- todo: figure out a way to position this responsively -->
+			</div>
+	    </div>
+
+
+<!-- 
 		<div class="row spaceabove20">
 			<div class="col-xs-12">
 				<div id="explore_stories-button" ng-click='goMyQuilt("/#")'>
@@ -34,6 +41,7 @@
 				</div>
 		    </div>
 	    </div>
+	     -->
 	</div>
 </div>
 

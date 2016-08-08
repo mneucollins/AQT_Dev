@@ -1,6 +1,12 @@
 $iconsize:34px;
+
+$sprite-icon-width: 42px;
+$sprite-icon-height: 42px;
+$sprite-icon-text-width: 42px;
+$sprite-icon-text-height: 53px;
+
 .sprite
-{
+{	/*this to be replaced with sprite-icon and sprite-icon-text*/
 	background-repeat: no-repeat;
 	width: 	$iconsize;
 	height: $iconsize;
@@ -8,7 +14,121 @@ $iconsize:34px;
 	padding: 0px;
 	//float: left;
 }
-	
+
+.sprite-icon{
+	background-repeat: no-repeat;
+	width: 	$sprite-icon-width;
+	height: $sprite-icon-height;
+	background-image: url(../images/layout/sprite-icon.png);
+	padding: 0px;
+
+}
+
+.sprite-icon-text{
+	background-repeat: no-repeat;
+	width: 	$sprite-icon-text-width;
+	height: $sprite-icon-text-height;
+	background-image: url(../images/layout/sprite-icon-text.png);
+	padding: 0px;
+}
+
+.icon-home{
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 2) (-$sprite-icon-height * 0); 	
+}
+.icon-home-reverse {
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 1) (-$sprite-icon-height * 2); 	
+}
+.icon-home-text {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 0) (-$sprite-icon-text-height * 2); 	
+}
+.icon-home-text-reverse {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 1) (-$sprite-icon-text-height * 2); 	
+}
+
+
+.icon-info{
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 0) (-$sprite-icon-height * 0); 	
+}
+.icon-info-reverse {
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 1) (-$sprite-icon-height * 0); 	
+}
+.icon-info-text {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 0) (-$sprite-icon-text-height * 0); 	
+}
+.icon-info-text-reverse {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 1) (-$sprite-icon-text-height * 0); 	
+}
+
+
+.icon-back{
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 0) (-$sprite-icon-height * 1); 	
+}
+.icon-back-reverse {
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 1) (-$sprite-icon-height * 1); 	
+}
+.icon-back-text {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 0) (-$sprite-icon-text-height * 1); 	
+}
+.icon-back-text-reverse {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 1) (-$sprite-icon-text-height * 1); 	
+}
+
+
+.icon-video{
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 0) (-$sprite-icon-height * 4); 	
+}
+.icon-video-reverse {
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 1) (-$sprite-icon-height * 4); 	
+}
+.icon-video-text {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 0) (-$sprite-icon-text-height * 4); 	
+}
+.icon-video-text-reverse {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 1) (-$sprite-icon-text-height * 4); 	
+}
+
+.icon-close{
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 0) (-$sprite-icon-height * 7); 	
+}
+.icon-close-reverse{
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 1) (-$sprite-icon-height * 7); 	
+}
+
+
+.icon-right{
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 0) (-$sprite-icon-height * 9); 	
+}
+
+.icon-right-sm{
+	/*customized size and position in order to fit into smaller space*/
+	@extend .sprite-icon;
+	background-position: (-$sprite-icon-width * 0) -428px;
+	width: 25px;
+	height: 25px;
+	margin-top: 5px;
+}
+
+
+/*to be removed
 .icn-home	{
 	@extend .sprite;
 	background-position: 0px (-$iconsize * 0); 
@@ -44,3 +164,5 @@ $iconsize:34px;
 	@extend .sprite;
 	background-position: 0px (-$iconsize * 5); 
 }
+
+*/

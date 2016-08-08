@@ -1,19 +1,20 @@
+
 /* Heidi-based navigation ids */
 
-$navbarheight:50px;
+$navbarheight:66px;
 
-.topnav
+.globalnav
 {
     background-color: $dk-grey;
     position: absolute;
     top: 0px;
     left: 0px ;
-    height: $navbarheight;
     width: 100%;
     padding-top: 6px;
     padding-right: 15px;
     margin-left: 0px;
     margin-right: 0px;
+    min-height: $navbarheight;
 }
 
 .btn-exit
@@ -70,9 +71,8 @@ $navbarheight:50px;
 }
 
 #explore-button {
-   	padding-top: $navbarheight;
 	width:100%;
-    height:52%;
+    height:46%;
 /*start opaque and change to transparent if browser can handle it*/	
 	background-color: $dk-pink;
 	background-color: rgba($dk-pink, .75);
@@ -80,7 +80,7 @@ $navbarheight:50px;
 
 #participate-button {
     width:100%;
-    height:48%;
+    height:46%;
 /*start opaque and change to transparent if browser can handle it*/ 
     background-color: $purple;
     background-color: rgba($purple, .85);
@@ -88,26 +88,37 @@ $navbarheight:50px;
 
 
 .pg-title {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: bold;
     /*padding-top: 50px;*/
     margin-left: -15px;
     text-transform: uppercase;
 }
 
-
-#explore_the_quilt-heading {
+#explore-heading, #explore_menu-heading, #explore_the_quilt-heading {
     text-align:left;
     text-transform: uppercase;       
-    font-weight: normal;
-    line-height: 1.2em;
-    margin-top: 1em;
     letter-spacing: 2px;
-    /*padding-left: 1em;*/
-    /*padding-top: 18%;*/
 }
 
-#explore_the_quilt-button, #explore_stories-button {
+#explore-heading {
+    margin-top:18%;   
+}
+
+#explore_menu-heading {
+    line-height: 1.2em;
+    margin-top: 1em;    
+}
+
+#explore_the_quilt-heading {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-top: 10%;
+    /*margin-left: -10%;*/
+}
+
+#explore_menu-button, #explore_stories-button, #explore_the_quilt-button, #random-button {
     width:110%;
     top: 40%;
     padding-left: 10%;
@@ -117,12 +128,35 @@ $navbarheight:50px;
     /*margin-top: 10px;*/
     background-color: $lt-pink;
 }
+#explore_stories-button {
+    background-color: $lt-pink;
+}
+
+#random-button {
+    padding-left: 0px;
+    /*
+    padding-bottom:0px;
+    padding-top: 0px;
+    */
+}
 
 .explore_the_quilt-label {
-    font-size: 1.8em;
-    width: 80%;
+    font-size: 1.4em;
+    line-height: 1.9em;    
     text-align:left;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.explore_the_quilt-menu {
+    font-size: 1.3em;
+    width: 100%;
+    line-height: 1.9em;    
+    text-align:left;
+    text-transform: uppercase;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 #my_quilt-heading{
@@ -135,9 +169,6 @@ $navbarheight:50px;
     letter-spacing: 3px;
 }
 
-#explore_stories-button {
-    background-color: $bittersweet;
-}
 
 .icn-forward-right {
     @include centerer;

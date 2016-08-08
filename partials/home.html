@@ -4,17 +4,15 @@
 	
 	<a href="#main" >
 		<div class="logo_home">
-			<img src="images/layout/logo_200.png" alt="AIDS Quilt Touch Logo">
-			<div class="logotype">
+			<img src="images/layout/AQTLogoText-200.png" alt="AIDS Quilt Touch Logo">
+			<!--<div class="logotype">
 				<span class="logotype_bold">AIDS QUILT</span> TOUCH
-			</div>
+			</div>-->
 		</div>
 	</a>
 	
 	<div class="align-center" ng-click="toggleInfoAbout()" ng-show="hideAbout">
-<!-- 		<span class="glyphicon glyphicon-question-sign" style="font-size:3em;"></span>
- -->		                <div class="icn-info-blue center-block"></div>
-
+		<div class="icon-info center-block info-home"></div>
 	</div>
 
 	<div class="overlay" id="about" ng-hide="hideAbout">
@@ -24,9 +22,9 @@
 		</button>
 		<div class="innertube">
 			<div class="align-left txt-reverse">
-				<h3>{{overlay.title}}</h3>
-				<h2>{{overlay.subtitle}}
-				<p>{{overlay.body}}</p>
+				<h2>{{heading}}</h2>
+				<h3>{{subheading}}</h3>
+				<p>{{body}}</p>
 			</div>
 		</div>
 	</div>

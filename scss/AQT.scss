@@ -11,10 +11,21 @@
 /*override bootstrap empty hrefs elements to avoid problems in angular*/
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
+/* bootstrap navbar overrides */
+.navbar {
+    min-height: 66px;
+    background-color: $dk-grey;
+	border-color: $dk-grey;
+}
+
+
 $font-family: 'Roboto', helvetica, sans-serif;
+$font-family-arial: 'Arial', helvetica, sans-serif;
+$font-family-Montserrat: 'Montserrat', sans-serif;
+$font-family-OpenSans: 'Open Sans Condensed', sans-serif;
 
 body {
-  font-family: $font-family;
+  font-family: $font-family-Montserrat;
   /*letter-spacing: 3px;*/
 }
 
@@ -28,6 +39,14 @@ body {
 
 .spaceabove20 {
 	margin-top:20px;
+}
+
+.nopad-left {
+	padding-left: 0px;
+}
+
+.nopad-right {
+	padding-right: 0px;
 }
 
 .align-left { 
@@ -45,6 +64,23 @@ body {
     width: 100%;
 	text-align: right;
 	margin-right:0px; 
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+.valign {
+  font-size: 0;
+}
+
+.valign > [class*="col"] {
+  display: inline-block;
+  float: none;
+  font-size: 14px;
+  font-size: 1rem;
+  vertical-align: middle;
 }
 
 #toSandbox {
@@ -106,14 +142,15 @@ body {
 
 .overlay, .overlay_nav{
 	position: absolute;
-	top: 60px;
-	height: 84%;	
+	top: 1%;
+	height: 98%;	
 	margin-left: 2%;
-	margin-right: 7%;
+	margin-right: 2%;
     overflow: auto;
     overflow-x: hidden;
     background-color: $dk-grey;
 	background-color: rgba($dk-grey, .85);
+	z-index: 2000;
 
 }
  .overlay {
@@ -121,14 +158,21 @@ body {
  	height:92%;
  }
 
+.info-home {
+	/*absolute placement of info button on home page */
+	position: relative;
+	bottom: -40px;
+}
 
 .logo_home {
 	width: 100%;
  	margin-left:auto;
  	margin-right:auto;
- 	padding-top: 33%;
+ 	padding-top: 50%;
 }
 
+/*----marked for removal----*/
+/* 
 .logotype
 {
 	margin-top: 1em;
@@ -138,11 +182,9 @@ body {
 }
 
 .logotype_bold {
-	/*use with span inside logotype classed element*/
 	font-weight: 700;
 }
-
-
+*/
 /*--------*/
 
 .btn-question {
@@ -156,6 +198,7 @@ body {
 	/*position:fixed;*/ 
 	bottom:0;
 }
+
 
 .bottom-right {
 	position:absolute;

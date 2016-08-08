@@ -1,11 +1,11 @@
-<div ng-include="'partials/include/top_nav.html'"></div>
+<div ng-include="'partials/include/global_nav.html'"></div>
 
 <div id="background_1a" ng-controller="MainController">
     <div class="aqtnav">
         <div id="explore-button" ng-click='goTo("/explore_main")'>
-            <div class="aqtnav-button-label txt-reverse">
+            <div class="aqtnav-button-label txt-reverse menuitem-bold">
                 <span class = "txt-yellow-green">Explore</span><br />
-                <span class="menuitem-bold">The<br /></span>
+                The<br />
                 Quilt
             </div>
         </div>
@@ -15,14 +15,13 @@
                     My<br />
                     Quilt<br />
                 </span>
-
-                <span style="font-size: 80%;">[participate]</span>
+                <span style="font-size: 70%;">[participate]</span>
             </div>
         </div>
     </div>
 </div>
 
-<div ng-controller="OverlayController">
+<div ng-controller="OverlayController" ng-init="getOverlayText('main')">
     <div class="overlay_nav" id="overlay"  ng-hide="$root.hideOverlay">
         <button type="button" class="btn btn-exit" ng-click="toggleOverlay()">
             <div class="icn-close"></div>
@@ -30,6 +29,9 @@
 
         <div class="innertube">
             <div class="left-align txt-reverse">
+                {{overlayText}}
+
+
                 <h3>EXPLORE</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 

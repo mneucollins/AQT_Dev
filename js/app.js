@@ -23,6 +23,9 @@ AQT.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 	.when('/my_quilt',{
 		templateUrl:'partials/my_quilt.html'
 	})
+	.when('/explore_the_quilt',{
+		templateUrl:'partials/explore_the_quilt.html'
+	})	
 	
 	.when('/scratchpad',{
 		templateUrl:'partials/scratchpad.html'
@@ -31,5 +34,4 @@ AQT.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 	.otherwise({
 		redirectTo: '/home'
 	});
-	
 }]);

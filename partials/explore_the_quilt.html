@@ -1,40 +1,63 @@
 <div ng-include="'partials/include/global_nav.html'"></div>
 
-<div id="background_2" ng-controller="ExploreController">
+<div id="background_2" ng-controller="ExploreQuiltController">
 	<div class="container-fluid">
 
 		<div class="row spaceabove20">
-			<div class="col-xs-offset-2">
-				<div class="pg-title txt-yellow-green">
-					<div id="explore_menu-heading">
-						Explore<br />
-						<span class="txt-reverse">The<br />Quilt</span>
+			<div class="col-xs-offset-1">
+				<!-- <div class="pg-title "> -->
+					<div id="explore_the_quilt-heading">
+						<span class= "txt-yellow-green">Explore<br /></span>
+						<span class="txt-reverse">The Quilt</span>
 					</div>
-				</div>
+				<!-- </div> -->
 			</div>
 		</div>
 
-		<div class="row spaceabove20">
-			<div class="col-xs-12">
-			    <div id="explore_menu-button" ng-click='goExplore("/#")'>
-			        <div class="explore_the_quilt-label txt-reverse">
-			            Explore the Quilt
-			        </div>
-					<div class="icn-forward icn-forward-right"></div>
-			    </div>
+		<div class="row spaceabove20" id="random-button" ng-click='goRandom("/#")'>
+			<div class="col-xs-10 npad-right">
+		        <div class="explore_the_quilt-menu txt-reverse">
+		            View a Random Selection
+		        </div>
+			</div>
+			<div class="col-xs-1 nopad-left">
+				<div class=" icon-right-sm"></div>
 			</div>
 		</div>
 
-		<div class="row spaceabove20">
-			<div class="col-xs-12">
-				<div id="explore_stories-button" ng-click='goMyQuilt("/#")'>
-			        <div class="explore_the_quilt-label txt-reverse">
-				        Explore stories about the quilt and people named on the quilt
-				    </div>
-					<div class="icn-forward icn-forward-right"></div>
-				</div>
-		    </div>
-	    </div>
+		<div class="row spaceabove20" id="random-button" ng-click='goStroll"/#")'>
+			<div class="col-xs-10 npad-right">
+		        <div class="explore_the_quilt-menu txt-reverse">
+		            Stroll the Quilt
+		        </div>
+			</div>
+			<div class="col-xs-1 nopad-left">
+				<div class=" icon-right-sm"></div>
+			</div>
+		</div>
+
+		<div class="row spaceabove20" id="random-button" ng-click='goFind("/#")'>
+			<div class="col-xs-10 npad-right">
+		        <div class="explore_the_quilt-menu txt-reverse">
+		            Find a Name
+		        </div>
+			</div>
+			<div class="col-xs-1 nopad-left">
+				<div class=" icon-right-sm"></div>
+			</div>
+		</div>
+
+		<div class="row spaceabove20" id="random-button" ng-click='goTour("/#")'>
+			<div class="col-xs-10 npad-right">
+		        <div class="explore_the_quilt-menu txt-reverse">
+		            Take a tour
+		        </div>
+			</div>
+			<div class="col-xs-1 nopad-left">
+				<div class=" icon-right-sm"></div>
+			</div>
+		</div>
+
 	</div>
 </div>
 

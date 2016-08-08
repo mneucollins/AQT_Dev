@@ -1,0 +1,21 @@
+<div ng-controller="NavController">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="globalnav">
+            <div class = "col-xs-3" id="back" ng-click='goBack()'>
+                <!-- <div class="icon-back-text-reverse pull-left"></div> -->
+                <div class="icon-back-text-reverse center-block"></div>
+            </div>
+            <div class = "col-xs-3" id="info" ng-click='$root.toggleOverlay()'>
+                <div class="icon-info-text-reverse center-block"></div>
+            </div>
+            <div class = "col-xs-3">
+                <!-- <div class="icon-video-text-reverse" id="storyNav" ng-hide="hideStoryNav"></div>-->
+                <div class="icon-video-text-reverse center-block"></div>
+            </div>
+            <div class = "col-xs-3" id="home" ng-click='goHome("/home")'>
+            <!-- <div class="icn-home pull-right"></div>-->
+                <div class="icon-home-text-reverse center-block"> </div>
+            </div>
+        </div>
+    </nav>
+</div>
