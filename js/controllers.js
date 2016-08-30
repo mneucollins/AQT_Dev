@@ -80,7 +80,7 @@ aqtControllers.controller('MyQuiltController', ['$scope','$location',function($s
 
 
 aqtControllers.controller('ScratchPadController', ['$scope', '$http', '$sce', function ($scope, $http, $sce) {
-		$http.get("http://localhost/PhpstormProjects/AQT_Meta/index.php/rest_test/overlay/main/format/html")
+		$http.get("http://mneucollins.org/AQTMeta/index.php/rest_test/overlay/main/format/html")
 			.then (function(response){
 				$scope.jsontext=response.data;
 				$scope.body = $sce.trustAsHtml(response.data.overlay_text);
