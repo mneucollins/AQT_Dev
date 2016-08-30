@@ -1,6 +1,7 @@
 var AQT = angular.module('AQT', [
 	'ngRoute',
 	'ui.bootstrap',
+	'vimeoEmbed',
 	'aqtControllers'
 ]);
 
