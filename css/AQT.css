@@ -80,6 +80,16 @@
 .icon-close-reverse {
   background-position: -42px -294px; }
 
+.icon-explore {
+  /*magnifying glass, open background*/
+  background-repeat: no-repeat;
+  width: 72px;
+  height: 72px;
+  background-image: url(../images/layout/icon-explore.png);
+  position: relative;
+  bottom: 50px;
+  float: right; }
+
 .icon-right {
   background-position: 0px -378px; }
 
@@ -216,14 +226,14 @@
   line-height: 1.2em;
   margin-top: 1em; }
 
-#explore_the_quilt-heading {
+#explore_the_quilt-heading, random_selection-heading {
   font-size: 3em;
   font-weight: bold;
   line-height: 1.2em;
   margin-top: 10%;
   /*margin-left: -10%;*/ }
 
-#explore_menu-button, #explore_stories-button, #explore_the_quilt-button, #random-button {
+#explore_menu-button, #explore_stories-button, #explore_the_quilt-button, #viewrandom-button, #findname-button, #taketour-button {
   width: 110%;
   top: 40%;
   padding-left: 10%;
@@ -234,9 +244,9 @@
   background-color: #F495B4; }
 
 #explore_stories-button {
-  background-color: #F495B4; }
+  background-color: #EF4036; }
 
-#random-button {
+#viewrandom-button {
   padding-left: 0px;
   /*
   padding-bottom:0px;
@@ -6277,6 +6287,14 @@ body {
 
 .txt-reverse {
   color: #F9F8F0; }
+
+/*image rotation*/
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */

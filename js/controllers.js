@@ -15,10 +15,14 @@ aqtControllers.controller('NavController', ['$scope', '$rootScope','$location', 
     $scope.goHome = function (hash) { 
         $location.path(hash); 
     }
+    $rootScope.currentscreen = "";
 }]);
 
-aqtControllers.controller('OverlayController', ['$scope', '$rootScope', function($scope, $rootScope, $http){
+aqtControllers.controller('OverlayController', ['$scope', '$rootScope','$location', function($scope, $rootScope, $location, $http){
 	$rootScope.hideOverlay = "true";
+	$scope.whereaminow="I am here";
+	$scope.currentscreen = $rootScope.currentscreen;
+
 /*	$scope.getOverlayText($screen){
 		$restserver='http://localhost/PhpstormProjects/AQT_Meta/index.php/rest_test/';
 		$restcall = $restserver+'overlay/'+$screen;
@@ -58,12 +62,18 @@ aqtControllers.controller('HomeController',['$scope', '$http', function($scope, 
 }]);
 
 
-aqtControllers.controller('MainController', ['$scope','$location',function($scope, $location){	
-    $scope.goTo = function (hash) { 
-        $location.path(hash); 
+aqtControllers.controller('MainController', ['$scope','$location',function($scope, $location){
+	$scope.hideOverlay="true";
+    $scope.goTo = function (hash) { $location.path(hash); }
+      	$scope.change = function() {
+  			$http.get("http://aqt/AQTMeta/index.php/rest_test/overlay/main/format/html")
+			.then (function(response){
+				$scope.jsontext=response.data;
+				$scope.overlaytext = $sce.trustAsHtml(response.data.overlay_text);
+			});
+  		}
     }
-
-}]);
+]);
 
 aqtControllers.controller('ExploreMainController', ['$scope','$location',function($scope, $location){	
 	$scope.goExplore = function(hash) {
@@ -79,11 +89,23 @@ aqtControllers.controller('MyQuiltController', ['$scope','$location',function($s
 }]);
 
 
-aqtControllers.controller('ScratchPadController', ['$scope', '$http', '$sce', function ($scope, $http, $sce) {
-		$http.get("http://mneucollins.org/AQTMeta/index.php/rest_test/overlay/main/format/html")
+aqtControllers.controller('RandomSelectionController', ['$scope','$location','$http',function($scope, $location, $http){	
+	$http.get("http://aqt/AQTMeta/index.php/r_quiltpanel/random_panel/format/json")
+		.then (function(response) {
+			$scope.panels = response.data;
+		});
+	$scope.goExplore = function(hash) {
+		$location.path(hash);
+	}
+}]);
+
+
+aqtControllers.controller('ScratchPadController', ['$scope','$location','$http', '$sce', function ($scope, $location, $http, $sce) {
+		$http.get("http://aqt/AQTMeta/index.php/rest_test/overlay/main/format/html")
 			.then (function(response){
 				$scope.jsontext=response.data;
 				$scope.body = $sce.trustAsHtml(response.data.overlay_text);
 		});
+		$scope.whereami = $location.url() + " " + $location.path();
 }]);
 

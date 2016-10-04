@@ -110,7 +110,7 @@ $navbarheight:66px;
     margin-top: 1em;    
 }
 
-#explore_the_quilt-heading {
+#explore_the_quilt-heading, random_selection-heading {
     font-size: 3em;
     font-weight: bold;
     line-height: 1.2em;
@@ -118,7 +118,7 @@ $navbarheight:66px;
     /*margin-left: -10%;*/
 }
 
-#explore_menu-button, #explore_stories-button, #explore_the_quilt-button, #random-button {
+#explore_menu-button, #explore_stories-button, #explore_the_quilt-button, #viewrandom-button, #findname-button, #taketour-button {
     width:110%;
     top: 40%;
     padding-left: 10%;
@@ -128,11 +128,13 @@ $navbarheight:66px;
     /*margin-top: 10px;*/
     background-color: $lt-pink;
 }
+
 #explore_stories-button {
-    background-color: $lt-pink;
+    background-color: $bittersweet;
 }
 
-#random-button {
+
+#viewrandom-button {
     padding-left: 0px;
     /*
     padding-bottom:0px;

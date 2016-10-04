@@ -112,6 +112,16 @@ $sprite-icon-text-height: 53px;
 	background-position: (-$sprite-icon-width * 1) (-$sprite-icon-height * 7); 	
 }
 
+.icon-explore{
+	/*magnifying glass, open background*/
+	background-repeat: no-repeat;
+	width: 	72px;
+	height: 72px;
+	background-image: url(../images/layout/icon-explore.png);
+	position: relative;
+	bottom: 50px;
+	float: right;
+}
 
 .icon-right{
 	@extend .sprite-icon;

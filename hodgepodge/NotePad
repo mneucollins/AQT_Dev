@@ -1,0 +1,11 @@
+Question
+When on a screen need to pass this location either to
+ --the global navigation about button in the NavController
+ 	the overlay text could then be retrieved upon clicking 
+ or 
+ --the overlay controller
+ 	the overlay text could then be loaded upon page load
+
+ Need to look into factories or services
+
+There must be a way to figure out what screen you are on...

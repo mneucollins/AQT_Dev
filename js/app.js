@@ -3,7 +3,9 @@ var AQT = angular.module('AQT', [
 	'ui.bootstrap',
 	'vimeoEmbed',
 	'aqtControllers'
-]);
+	])
+	.run (function($rootScope){ $rootScope.overlaytext = "";})
+;
 
 AQT.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 	$routeProvider
@@ -27,7 +29,9 @@ AQT.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 	.when('/explore_the_quilt',{
 		templateUrl:'partials/explore_the_quilt.html'
 	})	
-	
+	.when('/random_main',{
+		templateUrl:'partials/random_main.html'
+	})		
 	.when('/scratchpad',{
 		templateUrl:'partials/scratchpad.html'
 	})
