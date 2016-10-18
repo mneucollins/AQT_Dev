@@ -107,6 +107,7 @@ $sprite-icon-text-height: 53px;
 	@extend .sprite-icon-text;
 	background-position: (-$sprite-icon-text-width * 0) (-$sprite-icon-text-height * 5); 	
 }
+
 .icon-stitch-text-reverse {
 	@extend .sprite-icon-text;
 	background-position: (-$sprite-icon-text-width * 1) (-$sprite-icon-text-height * 5); 	

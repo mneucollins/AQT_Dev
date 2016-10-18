@@ -92,7 +92,7 @@ aqtControllers.controller('MyQuiltController', ['$scope','$location',function($s
 
 
 aqtControllers.controller('RandomSelectionController', ['$scope','$location','$http',function($scope, $location, $http){	
-	$http.get("http://aqt/AQTMeta/index.php/r_quiltpanel/random_panels/format/json")
+	$http.get("http://mneucollins.org/AQTMeta/index.php/r_quiltpanel/random_panels/format/json")
 		.then (function(response) {
 			// $scope.panels = response.data;
 			panelList = response.data;
@@ -105,7 +105,7 @@ aqtControllers.controller('RandomSelectionController', ['$scope','$location','$h
 			$scope.panels = panelList;
 		});
 	
-	$scope.imagepath = "http://aqt/AQTMeta/resources/images/panels";
+	$scope.imagepath = "http://mneucollins.org/AQTMeta/resources/images/panels";
 	$scope.goExplore = function(hash) {
 	$location.path(hash);
 	}
