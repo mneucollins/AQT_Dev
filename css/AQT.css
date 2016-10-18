@@ -19,7 +19,7 @@
   background-image: url(../images/layout/sprite-icon.png);
   padding: 0px; }
 
-.sprite-icon-text, .icon-home-text, .icon-home-text-reverse, .icon-info-text, .icon-info-text-reverse, .icon-back-text, .icon-back-text-reverse, .icon-video-text, .icon-video-text-reverse {
+.sprite-icon-text, .icon-home-text, .icon-home-text-reverse, .icon-info-text, .icon-info-text-reverse, .icon-back-text, .icon-back-text-reverse, .icon-video-text, .icon-video-text-reverse, .icon-stitch-text, .icon-stitch-text-reverse, .icon-favorite-text, .icon-favorite-text-reverse, .icon-tour-text, .icon-tour-text-reverse {
   background-repeat: no-repeat;
   width: 42px;
   height: 53px;
@@ -73,6 +73,24 @@
 
 .icon-video-text-reverse {
   background-position: -42px -212px; }
+
+.icon-stitch-text {
+  background-position: 0px -265px; }
+
+.icon-stitch-text-reverse {
+  background-position: -42px -265px; }
+
+.icon-favorite-text {
+  background-position: 0px -318px; }
+
+.icon-favorite-text-reverse {
+  background-position: -42px -318px; }
+
+.icon-tour-text {
+  background-position: 0px -371px; }
+
+.icon-tour-text-reverse {
+  background-position: -42px -371px; }
 
 .icon-close {
   background-position: 0px -294px; }
@@ -207,6 +225,13 @@
   background-color: #6B408E;
   background-color: rgba(107, 64, 142, 0.85); }
 
+.q_panel_button {
+  background-color: #37011c;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-left: 0px;
+  padding-right: 0px; }
+
 .pg-title {
   font-size: 3.5em;
   font-weight: bold;
@@ -214,9 +239,10 @@
   margin-left: -15px;
   text-transform: uppercase; }
 
-#explore-heading, #explore_menu-heading, #explore_the_quilt-heading {
+#explore-heading, #explore_menu-heading, #explore_the_quilt-heading, #random_selection-heading {
   text-align: left;
   text-transform: uppercase;
+  font-weight: bold;
   letter-spacing: 2px; }
 
 #explore-heading {
@@ -226,14 +252,19 @@
   line-height: 1.2em;
   margin-top: 1em; }
 
-#explore_the_quilt-heading, random_selection-heading {
+#explore_the_quilt-heading {
   font-size: 3em;
   font-weight: bold;
   line-height: 1.2em;
   margin-top: 10%;
   /*margin-left: -10%;*/ }
 
-#explore_menu-button, #explore_stories-button, #explore_the_quilt-button, #viewrandom-button, #findname-button, #taketour-button {
+#random_selection-heading {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin-top: 2%; }
+
+#explore_menu-button, #explore_stories-button, #explore_the_quilt-button, #viewrandom-button, #findname-button, #taketour-button, #selectionguide-button {
   width: 110%;
   top: 40%;
   padding-left: 10%;
@@ -243,7 +274,7 @@
   /*margin-top: 10px;*/
   background-color: #F495B4; }
 
-#explore_stories-button {
+#explore_stories-button, #selectionguide-button {
   background-color: #EF4036; }
 
 #viewrandom-button {
@@ -253,7 +284,7 @@
   padding-top: 0px;
   */ }
 
-.explore_the_quilt-label {
+.explore_the_quilt-label, viewrandom-label {
   font-size: 1.4em;
   line-height: 1.9em;
   text-align: left;
@@ -6288,13 +6319,43 @@ body {
 .txt-reverse {
   color: #F9F8F0; }
 
+/*clearfix*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1;
+  /* ie 6/7 */ }
+
+/*  random selection screen tweaks */
+.nopadcol {
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
+
+/* this inserts clears after two quilt panels 
+   so that columns properly line up on larger display 
+   regardless of height variations */
+.panelrow > div:nth-of-type(2n+1) {
+  clear: both; }
+
+.footspace {
+  clear: both;
+  min-height: 40px;
+  margin-bottom: 40px; }
+
 /*image rotation*/
 .rotate90 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+  transform-origin: top left; }
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */

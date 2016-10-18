@@ -103,6 +103,38 @@ $sprite-icon-text-height: 53px;
 	background-position: (-$sprite-icon-text-width * 1) (-$sprite-icon-text-height * 4); 	
 }
 
+.icon-stitch-text {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 0) (-$sprite-icon-text-height * 5); 	
+}
+.icon-stitch-text-reverse {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 1) (-$sprite-icon-text-height * 5); 	
+}
+
+
+.icon-favorite-text {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 0) (-$sprite-icon-text-height * 6); 	
+}
+.icon-favorite-text-reverse {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 1) (-$sprite-icon-text-height * 6); 	
+}
+
+
+.icon-tour-text {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 0) (-$sprite-icon-text-height * 7); 	
+}
+.icon-tour-text-reverse {
+	@extend .sprite-icon-text;
+	background-position: (-$sprite-icon-text-width * 1) (-$sprite-icon-text-height * 7); 	
+}
+
+
+
+
 .icon-close{
 	@extend .sprite-icon;
 	background-position: (-$sprite-icon-width * 0) (-$sprite-icon-height * 7); 	

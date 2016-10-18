@@ -1,31 +1,38 @@
 <div ng-include="'partials/include/global_nav.html'"></div>
 
-<div id="background_2" ng-controller="RandomSelectController">
+<div id="background_2" ng-controller="RandomSelectionController">
 	<div class="container-fluid">
 
-		<div class="row spaceabove20">
+		<div class="row">
 			<div class="col-xs-offset-1">
 				<!-- <div class="pg-title "> -->
-					<div id="explore_the_quilt-heading">
+					<div id="random_selection-heading">
 						<span class="txt-reverse">Random Selection</span>
 					</div>
 				<!-- </div> -->
 			</div>
 		</div>
 
-		<div ng-repeat "panel in panels">
-			<img src="http://aqtmeta/resources/images/panels/{{panel.image_name}}" />
+
+		<div class="panels">
+			<div class="row panelrow">			
+				<div class="col-sm-6 nopadcol"  ng-repeat="panel in panels" >
+					<img ng-src = "{{imagepath}}/{{panel.buttonImg}}" class="q_panel_button align-center innertube">
+				</div>
+			</div>
 		</div>
 
-		<div class="row spaceabove20" id="random_selection-button" ng-click='goRandom("/#")'>
+		<div class="row spaceabove20" id="selectionguide-button" ng-click='goRandom("/#")'>
 			<div class="col-xs-10 npad-right vcenter">
 		        <div class="explore_the_quilt-menu txt-reverse ">
-		            Random Selection
+		            Selection Guide
 		        </div>
 			</div><!--
 				<div class="col-xs-2 icon-right" style="top: 50px;">
 			--><div class="col-xs-2 icon-right vcenter"></div>
 		</div>
+		
+		<div class="footspace">&nbsp;</div>
 
 	</div>
 </div>

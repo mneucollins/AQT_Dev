@@ -82,7 +82,9 @@ aqtControllers.controller('ExploreMainController', ['$scope','$location',functio
 }]);
 
 aqtControllers.controller('ExploreQuiltController', ['$scope','$location',function($scope, $location){	
-
+	$scope.goRandom = function(hash) {
+		$location.path(hash);
+	}
 }]);
 
 aqtControllers.controller('MyQuiltController', ['$scope','$location',function($scope, $location){	
@@ -90,12 +92,22 @@ aqtControllers.controller('MyQuiltController', ['$scope','$location',function($s
 
 
 aqtControllers.controller('RandomSelectionController', ['$scope','$location','$http',function($scope, $location, $http){	
-	$http.get("http://aqt/AQTMeta/index.php/r_quiltpanel/random_panel/format/json")
+	$http.get("http://aqt/AQTMeta/index.php/r_quiltpanel/random_panels/format/json")
 		.then (function(response) {
-			$scope.panels = response.data;
+			// $scope.panels = response.data;
+			panelList = response.data;
+
+			angular.forEach(panelList, function(panelObj, panelListKey){
+				console.log(panelObj);
+				var aImageName = panelObj.image_name.split(".");
+				panelObj.buttonImg = "_sm/" + aImageName[0] + "_sm." + aImageName[1];
+			});
+			$scope.panels = panelList;
 		});
+	
+	$scope.imagepath = "http://aqt/AQTMeta/resources/images/panels";
 	$scope.goExplore = function(hash) {
-		$location.path(hash);
+	$location.path(hash);
 	}
 }]);
 

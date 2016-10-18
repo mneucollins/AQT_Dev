@@ -86,6 +86,16 @@ $navbarheight:66px;
     background-color: rgba($purple, .85);
 }
 
+.q_panel_button {
+	//width: 90%;
+	background-color: #37011c;
+	margin-top: 1%;
+	margin-bottom:1%;
+	padding-left: 0px;
+	padding-right: 0px
+}
+
+
 
 .pg-title {
     font-size: 3.5em;
@@ -95,9 +105,10 @@ $navbarheight:66px;
     text-transform: uppercase;
 }
 
-#explore-heading, #explore_menu-heading, #explore_the_quilt-heading {
+#explore-heading, #explore_menu-heading, #explore_the_quilt-heading, #random_selection-heading {
     text-align:left;
-    text-transform: uppercase;       
+    text-transform: uppercase;
+    font-weight: bold;     
     letter-spacing: 2px;
 }
 
@@ -110,7 +121,7 @@ $navbarheight:66px;
     margin-top: 1em;    
 }
 
-#explore_the_quilt-heading, random_selection-heading {
+#explore_the_quilt-heading {
     font-size: 3em;
     font-weight: bold;
     line-height: 1.2em;
@@ -118,7 +129,13 @@ $navbarheight:66px;
     /*margin-left: -10%;*/
 }
 
-#explore_menu-button, #explore_stories-button, #explore_the_quilt-button, #viewrandom-button, #findname-button, #taketour-button {
+#random_selection-heading {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    margin-top: 2%;
+}
+
+#explore_menu-button, #explore_stories-button, #explore_the_quilt-button, #viewrandom-button, #findname-button, #taketour-button, #selectionguide-button {
     width:110%;
     top: 40%;
     padding-left: 10%;
@@ -129,7 +146,7 @@ $navbarheight:66px;
     background-color: $lt-pink;
 }
 
-#explore_stories-button {
+#explore_stories-button, #selectionguide-button {
     background-color: $bittersweet;
 }
 
@@ -142,7 +159,7 @@ $navbarheight:66px;
     */
 }
 
-.explore_the_quilt-label {
+.explore_the_quilt-label, viewrandom-label {
     font-size: 1.4em;
     line-height: 1.9em;    
     text-align:left;
