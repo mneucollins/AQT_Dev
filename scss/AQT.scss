@@ -225,6 +225,52 @@ body {
 .txt-reverse { color:$reverse; }
 
 
+/*clearfix*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+
+/*  random selection screen tweaks */
+.nopadcol{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* this inserts clears after two quilt panels 
+   so that columns properly line up on larger display 
+   regardless of height variations */
+.panelrow > div:nth-of-type(2n+1){
+  clear:both;
+}
+
+.footspace{
+//adds space to the bottom of the page to keep contant above the navigation bar
+    clear:both;
+    min-height: 40px;
+    margin-bottom: 40px;    
+}
+
+/*image rotation*/
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
