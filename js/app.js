@@ -29,8 +29,8 @@ AQT.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 	.when('/explore_the_quilt',{
 		templateUrl:'partials/explore_the_quilt.html'
 	})	
-	.when('/random_main',{
-		templateUrl:'partials/random_main.html'
+	.when('/explore_random_view',{
+		templateUrl:'partials/explore_random_view.html'
 	})		
 	.when('/scratchpad',{
 		templateUrl:'partials/scratchpad.html'
